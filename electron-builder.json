@@ -282,7 +282,7 @@
   },
   "publish": {
     "provider": "github",
-    "owner": "OpenWhispr",
+    "owner": "hwgprojects",
     "repo": "openwhispr",
     "private": false,
     "releaseType": "draft"

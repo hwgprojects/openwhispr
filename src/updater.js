@@ -31,9 +31,12 @@ class UpdateManager {
       return;
     }
 
+    // This fork carries a personal preset, so it must never update itself to
+    // upstream's build. Its feed is the fork, which ships no releases: upgrade
+    // by merging upstream and rebuilding (scripts/hwg/README.md).
     autoUpdater.setFeedURL({
       provider: "github",
-      owner: "OpenWhispr",
+      owner: "hwgprojects",
       repo: "openwhispr",
       private: false,
     });
