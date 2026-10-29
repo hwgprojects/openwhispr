@@ -101,6 +101,11 @@
   "extraResources": [
     ".env",
     {
+      "from": "presets",
+      "to": "presets",
+      "filter": ["*.json", "*.txt"]
+    },
+    {
       "from": "src/assets",
       "to": "src/assets",
       "filter": ["**/*", "!fonts/yowza/**"]

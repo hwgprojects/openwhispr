@@ -329,6 +329,7 @@
         "corti_corti_s1_mini": "نموذج سريري مدمج مع استنتاج بنصف السعر",
         "tinfoil_glm_5_3": "نموذج خاص للهندسة البرمجية بقدرات وكيلية في بيئات معزولة وآمنة، سياق 1M",
         "openai_gpt_6_1_sol": "قدرة قريبة من Astra للمحادثة والمهام الوكيلة بتكلفة أقل",
+        "openai_gpt_6_1_terra": "Balanced GPT-6.1 for everyday work",
         "openai_gpt_6_luna": "GPT-6 الأسرع والأقل تكلفة",
         "gemini_gemini_3_6_flash": "نموذج Gemini سريع وعالي القدرة",
         "gemini_gemini_3_8_flash": "نموذج Flash الأكثر قدرة",

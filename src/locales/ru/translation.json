@@ -2746,6 +2746,7 @@
         "corti_corti_s1_mini_instant": "Компактная медицинская модель, самая быстрая и дешёвая",
         "corti_corti_s1_mini": "Компактная клиническая модель с рассуждением за полцены",
         "openai_gpt_6_1_sol": "Возможности близкие к Astra для чата и агентных задач по меньшей цене",
+        "openai_gpt_6_1_terra": "Balanced GPT-6.1 for everyday work",
         "openai_gpt_6_luna": "Самая быстрая и недорогая GPT-6",
         "gemini_gemini_3_6_flash": "Быстрая высокопроизводительная модель Gemini",
         "gemini_gemini_3_8_flash": "Самая мощная модель Flash",

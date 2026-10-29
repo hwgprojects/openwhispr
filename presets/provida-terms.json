@@ -1,0 +1,2557 @@
+{
+  "generatedAt": "2026-10-29",
+  "terms": [
+    {
+      "term": "Provida",
+      "category": "company",
+      "note": "Company name; never 'Provida UK'",
+      "misheard": [
+        "Pro Vida",
+        "Pervida",
+        "Providah"
+      ]
+    },
+    {
+      "term": "Neil Gilbert",
+      "category": "person",
+      "note": "Harley's dad, Managing Partner",
+      "misheard": [
+        "Neal Gilbert"
+      ]
+    },
+    {
+      "term": "Neil",
+      "category": "person",
+      "note": "Harley's dad, Managing Partner",
+      "misheard": [
+        "Neal"
+      ]
+    },
+    {
+      "term": "Harley Gilbert",
+      "category": "person",
+      "note": "Harley himself (initials used in folders/meetings)"
+    },
+    {
+      "term": "HWG",
+      "category": "person",
+      "note": "Harley himself (initials used in folders/meetings)",
+      "misheard": [
+        "H W G"
+      ]
+    },
+    {
+      "term": "Lavinia Schlaudraff",
+      "category": "person",
+      "note": "Colleague (sales/office); Teams + email",
+      "misheard": [
+        "Lavinia Slawdruf",
+        "Lavinia Schlaudrof",
+        "Lavina"
+      ]
+    },
+    {
+      "term": "Lavinia",
+      "category": "person",
+      "note": "Colleague (sales/office); Teams + email",
+      "misheard": [
+        "Lavina",
+        "Levinia"
+      ]
+    },
+    {
+      "term": "Mojola Obembe",
+      "category": "person",
+      "note": "Colleague; nickname Mo",
+      "misheard": [
+        "Majola Obembe",
+        "Mojola O'Bembe"
+      ]
+    },
+    {
+      "term": "Mojola",
+      "category": "person",
+      "note": "Colleague; nickname Mo",
+      "misheard": [
+        "Majola",
+        "Mo Jola"
+      ]
+    },
+    {
+      "term": "Mo",
+      "category": "person",
+      "note": "Colleague; nickname Mo",
+      "misheard": [
+        "Moe"
+      ]
+    },
+    {
+      "term": "Graham Gilbert",
+      "category": "person",
+      "note": "Colleague (sales/equipment); initials GG"
+    },
+    {
+      "term": "GG",
+      "category": "person",
+      "note": "Colleague (sales/equipment); initials GG",
+      "misheard": [
+        "G G"
+      ]
+    },
+    {
+      "term": "Luis De Sousa",
+      "category": "person",
+      "note": "Purchasing/warehouse colleague",
+      "misheard": [
+        "Lewis De Sousa",
+        "Louis de Souza"
+      ]
+    },
+    {
+      "term": "Luis",
+      "category": "person",
+      "note": "Purchasing/warehouse colleague",
+      "misheard": [
+        "Lewis",
+        "Louis"
+      ]
+    },
+    {
+      "term": "Philip Poulter",
+      "category": "person",
+      "note": "Colleague; called Phil",
+      "misheard": [
+        "Phillip Poulter",
+        "Philip Polter"
+      ]
+    },
+    {
+      "term": "Phil",
+      "category": "person",
+      "note": "Colleague; called Phil"
+    },
+    {
+      "term": "Thanh Van Dang",
+      "category": "person",
+      "note": "Warehouse/picking colleague",
+      "misheard": [
+        "Tan Van Dang"
+      ]
+    },
+    {
+      "term": "Thanh",
+      "category": "person",
+      "note": "Warehouse/picking colleague",
+      "misheard": [
+        "Tan",
+        "Tarn"
+      ]
+    },
+    {
+      "term": "Dayanara Diaz",
+      "category": "person",
+      "note": "Colleague (admin/invoicing)",
+      "misheard": [
+        "Diana Diaz",
+        "Dayanera"
+      ]
+    },
+    {
+      "term": "Dayanara",
+      "category": "person",
+      "note": "Colleague (admin/invoicing)",
+      "misheard": [
+        "Diana"
+      ]
+    },
+    {
+      "term": "Donald John Diaz",
+      "category": "person",
+      "note": "Servicing team"
+    },
+    {
+      "term": "Mark Alvarez",
+      "category": "person",
+      "note": "Servicing team",
+      "misheard": [
+        "Mark Alvares"
+      ]
+    },
+    {
+      "term": "Ali Castro",
+      "category": "person",
+      "note": "Servicing team"
+    },
+    {
+      "term": "Richard Cooney",
+      "category": "person",
+      "note": "Servicing team"
+    },
+    {
+      "term": "Alvin Gibson",
+      "category": "person",
+      "note": "Servicing team"
+    },
+    {
+      "term": "Paul Rigby",
+      "category": "person",
+      "note": "Servicing team"
+    },
+    {
+      "term": "Yoki Yue",
+      "category": "person",
+      "note": "Servicing team",
+      "misheard": [
+        "Yoky You"
+      ]
+    },
+    {
+      "term": "Tyler Schlaudraff",
+      "category": "person",
+      "note": "External contact; Harley shared his ChatGPT email setup",
+      "misheard": [
+        "Tyler Slawdruf"
+      ]
+    },
+    {
+      "term": "Mike Harvey",
+      "category": "person",
+      "note": "Trusted Computing (IT provider) contact"
+    },
+    {
+      "term": "Ntombi Hlatswayo",
+      "category": "person",
+      "note": "Trusted Computing (IT provider) contact",
+      "misheard": [
+        "Tombi Hlatswayo",
+        "Ntombi Shlatswayo"
+      ]
+    },
+    {
+      "term": "Russell White",
+      "category": "person",
+      "note": "UBT client contact"
+    },
+    {
+      "term": "Chris Northwood",
+      "category": "person",
+      "note": "Accountant mentioned in meetings"
+    },
+    {
+      "term": "Syrinx",
+      "category": "system",
+      "note": "Legacy ERP / order system (Syrinx SP)",
+      "misheard": [
+        "Sirix",
+        "Serinx",
+        "Cyrix",
+        "Syrinks",
+        "Serinks",
+        "Sirinx"
+      ]
+    },
+    {
+      "term": "SyrinxCWO",
+      "category": "system",
+      "note": "Syrinx customer web ordering (CWO)",
+      "misheard": [
+        "Syrinx CWO"
+      ]
+    },
+    {
+      "term": "CWO",
+      "category": "system",
+      "note": "Syrinx customer web ordering (CWO)",
+      "misheard": [
+        "C W O"
+      ]
+    },
+    {
+      "term": "Lyrinx",
+      "category": "system",
+      "note": "Linux/Wine packaging of Syrinx",
+      "misheard": [
+        "Lirinx",
+        "Lirinks"
+      ]
+    },
+    {
+      "term": "Conduit",
+      "category": "system",
+      "note": "Convex backend + Admin UI for Provida data/API",
+      "misheard": [
+        "Condit"
+      ]
+    },
+    {
+      "term": "Papertrail",
+      "category": "system",
+      "note": "Warehouse picking/delivery app",
+      "misheard": [
+        "paper trail",
+        "Paper Trail"
+      ]
+    },
+    {
+      "term": "LowerConcept",
+      "category": "system",
+      "note": "Repo containing Conduit and Syrinx research",
+      "misheard": [
+        "Lower Concept"
+      ]
+    },
+    {
+      "term": "Stockup",
+      "category": "system",
+      "note": "Ordering/basket portal",
+      "misheard": [
+        "StockUp",
+        "stock up"
+      ]
+    },
+    {
+      "term": "Atlas",
+      "category": "system",
+      "note": "Customer SDS / portal app",
+      "misheard": [
+        "Atlas SDS"
+      ]
+    },
+    {
+      "term": "Smart Layer",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Query Studio",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "NLQ",
+      "category": "system",
+      "note": "Conduit feature names",
+      "misheard": [
+        "N L Q"
+      ]
+    },
+    {
+      "term": "Vanna",
+      "category": "system",
+      "note": "Conduit feature names",
+      "misheard": [
+        "Vana"
+      ]
+    },
+    {
+      "term": "Report Builder",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Delivery OS",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Provida Order Bot",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Order Bot",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Executor",
+      "category": "system",
+      "note": "Conduit feature names",
+      "misheard": [
+        "executer"
+      ]
+    },
+    {
+      "term": "Provida Codex",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Provida Fleet",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Safeguarding Configurator",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Provida Transcribe",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "Workshop App",
+      "category": "system",
+      "note": "Conduit feature names"
+    },
+    {
+      "term": "ERPNext",
+      "category": "system",
+      "note": "Next ERP replacing Syrinx",
+      "misheard": [
+        "ERP Next",
+        "ERP next"
+      ]
+    },
+    {
+      "term": "Frappe",
+      "category": "system",
+      "note": "Next ERP replacing Syrinx",
+      "misheard": [
+        "Frappé"
+      ]
+    },
+    {
+      "term": "RAMJET",
+      "category": "system",
+      "note": "Server / host names",
+      "misheard": [
+        "ram jet"
+      ]
+    },
+    {
+      "term": "AFTERBURNER",
+      "category": "system",
+      "note": "Server / host names",
+      "misheard": [
+        "after burner"
+      ]
+    },
+    {
+      "term": "AIRFRAME",
+      "category": "system",
+      "note": "Server / host names",
+      "misheard": [
+        "air frame"
+      ]
+    },
+    {
+      "term": "VROOM",
+      "category": "system",
+      "note": "Server / host names"
+    },
+    {
+      "term": "WEBNEW",
+      "category": "system",
+      "note": "Server / host names",
+      "misheard": [
+        "web new"
+      ]
+    },
+    {
+      "term": "Aegis",
+      "category": "system",
+      "note": "Network/monitoring project",
+      "misheard": [
+        "Egis",
+        "Agis"
+      ]
+    },
+    {
+      "term": "Beszel",
+      "category": "system",
+      "note": "Network/monitoring project",
+      "misheard": [
+        "Bezel"
+      ]
+    },
+    {
+      "term": "Hegel",
+      "category": "system",
+      "note": "AI agent persona name",
+      "misheard": [
+        "Hegal"
+      ]
+    },
+    {
+      "term": "Fulfilment Note",
+      "category": "other",
+      "note": "Order paperwork terms used in Syrinx/Papertrail"
+    },
+    {
+      "term": "Advice Note",
+      "category": "other",
+      "note": "Order paperwork terms used in Syrinx/Papertrail"
+    },
+    {
+      "term": "Now-Cash",
+      "category": "other",
+      "note": "Order paperwork terms used in Syrinx/Papertrail"
+    },
+    {
+      "term": "Pickability",
+      "category": "other",
+      "note": "Order paperwork terms used in Syrinx/Papertrail"
+    },
+    {
+      "term": "Trengo",
+      "category": "tool",
+      "note": "Shared inbox / helpdesk",
+      "misheard": [
+        "Trenga",
+        "Trango",
+        "Trengoe"
+      ]
+    },
+    {
+      "term": "Constant Contact",
+      "category": "tool",
+      "note": "Email marketing tool"
+    },
+    {
+      "term": "Better Stack",
+      "category": "tool",
+      "note": "Uptime/error monitoring",
+      "misheard": [
+        "BetterStack"
+      ]
+    },
+    {
+      "term": "Guardz",
+      "category": "tool",
+      "note": "M365 security tooling via IT provider"
+    },
+    {
+      "term": "ConnectWise SkyKick",
+      "category": "tool",
+      "note": "M365 security tooling via IT provider",
+      "misheard": [
+        "Connectwise Sky Kick"
+      ]
+    },
+    {
+      "term": "SkyKick",
+      "category": "tool",
+      "note": "M365 security tooling via IT provider",
+      "misheard": [
+        "Sky Kick"
+      ]
+    },
+    {
+      "term": "Trusted Computing",
+      "category": "supplier",
+      "note": "IT support provider"
+    },
+    {
+      "term": "UBT",
+      "category": "supplier",
+      "note": "Telecoms provider (3CX hosting)",
+      "misheard": [
+        "U B T"
+      ]
+    },
+    {
+      "term": "Rydal",
+      "category": "supplier",
+      "note": "Telecoms provider (3CX hosting)"
+    },
+    {
+      "term": "3CX",
+      "category": "supplier",
+      "note": "Telecoms provider (3CX hosting)",
+      "misheard": [
+        "three CX"
+      ]
+    },
+    {
+      "term": "Entra",
+      "category": "tool",
+      "note": "Microsoft identity",
+      "misheard": [
+        "Entra ID",
+        "Intra"
+      ]
+    },
+    {
+      "term": "Microsoft 365",
+      "category": "tool",
+      "note": "Microsoft identity"
+    },
+    {
+      "term": "O365",
+      "category": "tool",
+      "note": "Microsoft identity",
+      "misheard": [
+        "O 365"
+      ]
+    },
+    {
+      "term": "SharePoint",
+      "category": "tool",
+      "note": "Microsoft identity"
+    },
+    {
+      "term": "OneDrive",
+      "category": "tool",
+      "note": "Microsoft identity"
+    },
+    {
+      "term": "Azure",
+      "category": "tool",
+      "note": "Microsoft identity"
+    },
+    {
+      "term": "Xero",
+      "category": "tool",
+      "note": "Accounting/finance tools"
+    },
+    {
+      "term": "Sage 200",
+      "category": "tool",
+      "note": "Accounting/finance tools"
+    },
+    {
+      "term": "Bankline",
+      "category": "tool",
+      "note": "Accounting/finance tools"
+    },
+    {
+      "term": "Unleashed",
+      "category": "tool",
+      "note": "Accounting/finance tools",
+      "misheard": [
+        "Unelashed"
+      ]
+    },
+    {
+      "term": "Access Group",
+      "category": "tool",
+      "note": "Accounting/finance tools"
+    },
+    {
+      "term": "BrightHR",
+      "category": "tool",
+      "note": "Accounting/finance tools"
+    },
+    {
+      "term": "Shopify",
+      "category": "tool",
+      "note": "Ecommerce"
+    },
+    {
+      "term": "Shopify B2B",
+      "category": "tool",
+      "note": "Ecommerce"
+    },
+    {
+      "term": "Magento",
+      "category": "tool",
+      "note": "Ecommerce"
+    },
+    {
+      "term": "Horizon theme",
+      "category": "tool",
+      "note": "Ecommerce"
+    },
+    {
+      "term": "WhatsApp",
+      "category": "tool",
+      "note": "Ecommerce"
+    },
+    {
+      "term": "Claude Code",
+      "category": "tool",
+      "note": "AI coding agent",
+      "misheard": [
+        "Cloud Code",
+        "Clawed Code"
+      ]
+    },
+    {
+      "term": "Claude",
+      "category": "tool",
+      "note": "AI coding agent",
+      "misheard": [
+        "Clawed"
+      ]
+    },
+    {
+      "term": "Codex",
+      "category": "tool",
+      "note": "AI coding agent",
+      "misheard": [
+        "Codecs",
+        "Kodex"
+      ]
+    },
+    {
+      "term": "Codex Desktop",
+      "category": "tool",
+      "note": "AI coding agent"
+    },
+    {
+      "term": "T3 Code",
+      "category": "tool",
+      "note": "AI coding agent",
+      "misheard": [
+        "T three code",
+        "tea three code"
+      ]
+    },
+    {
+      "term": "OpenWhispr",
+      "category": "tool",
+      "note": "AI coding agent",
+      "misheard": [
+        "Open Whisper"
+      ]
+    },
+    {
+      "term": "Wispr Flow",
+      "category": "tool",
+      "note": "AI coding agent",
+      "misheard": [
+        "Whisper Flow"
+      ]
+    },
+    {
+      "term": "opencodex",
+      "category": "tool",
+      "note": "AI coding agent",
+      "misheard": [
+        "open codex"
+      ]
+    },
+    {
+      "term": "ChatGPT",
+      "category": "tool",
+      "note": "AI coding agent"
+    },
+    {
+      "term": "OpenAI",
+      "category": "tool",
+      "note": "AI coding agent"
+    },
+    {
+      "term": "Anthropic",
+      "category": "tool",
+      "note": "AI coding agent"
+    },
+    {
+      "term": "gpt-transcribe",
+      "category": "tool",
+      "note": "AI coding agent",
+      "misheard": [
+        "GPT transcribe"
+      ]
+    },
+    {
+      "term": "Opus",
+      "category": "tool",
+      "note": "Model names"
+    },
+    {
+      "term": "Sonnet",
+      "category": "tool",
+      "note": "Model names"
+    },
+    {
+      "term": "GPT-6 Astra",
+      "category": "tool",
+      "note": "Model names",
+      "misheard": [
+        "GPT six Astra"
+      ]
+    },
+    {
+      "term": "Astra",
+      "category": "tool",
+      "note": "Model names"
+    },
+    {
+      "term": "Convex",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Convects"
+      ]
+    },
+    {
+      "term": "Render",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "render.com"
+      ]
+    },
+    {
+      "term": "Tailscale",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Tail scale",
+        "Tailscail"
+      ]
+    },
+    {
+      "term": "Cloudflare",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Cloud flare"
+      ]
+    },
+    {
+      "term": "cloudflared",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "cloud flared"
+      ]
+    },
+    {
+      "term": "Greptile",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Grep tile",
+        "Greptail"
+      ]
+    },
+    {
+      "term": "Beads",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "beeds"
+      ]
+    },
+    {
+      "term": "Dolt",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Dolt DB"
+      ]
+    },
+    {
+      "term": "Replit",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Rep lit"
+      ]
+    },
+    {
+      "term": "GitHub",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "WSL",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "W S L"
+      ]
+    },
+    {
+      "term": "PowerShell",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "Playwright",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "agent-browser",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "agent browser"
+      ]
+    },
+    {
+      "term": "Vite",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Veet",
+        "Vight"
+      ]
+    },
+    {
+      "term": "TanStack",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Tan Stack"
+      ]
+    },
+    {
+      "term": "shadcn",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "shad CN",
+        "shad cn"
+      ]
+    },
+    {
+      "term": "Remotion",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "Docling",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "ByteRover",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "Byte Rover"
+      ]
+    },
+    {
+      "term": "Ubuntu",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "systemd",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "pytest",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "ruff",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "MCP",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "M C P"
+      ]
+    },
+    {
+      "term": "Next.js",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "next JS"
+      ]
+    },
+    {
+      "term": "TypeScript",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "Postgres",
+      "category": "tool",
+      "note": "Dev infra / CLIs"
+    },
+    {
+      "term": "IIS",
+      "category": "tool",
+      "note": "Dev infra / CLIs",
+      "misheard": [
+        "I I S"
+      ]
+    },
+    {
+      "term": "Curavest",
+      "category": "other",
+      "note": "Harley's side projects",
+      "misheard": [
+        "Cura vest"
+      ]
+    },
+    {
+      "term": "BeadsPulse",
+      "category": "other",
+      "note": "Harley's side projects"
+    },
+    {
+      "term": "Chromaplume",
+      "category": "other",
+      "note": "Harley's side projects"
+    },
+    {
+      "term": "Schlanvas",
+      "category": "other",
+      "note": "Harley's side projects"
+    },
+    {
+      "term": "SkillCzar",
+      "category": "other",
+      "note": "Harley's side projects"
+    },
+    {
+      "term": "Pax Hill",
+      "category": "customer",
+      "note": "Key customer; frequent pricing agreement work",
+      "misheard": [
+        "Packs Hill",
+        "Pax hill"
+      ]
+    },
+    {
+      "term": "St Vincent Care Homes",
+      "category": "customer",
+      "note": "Care group (Magnolia House, Eden House)",
+      "misheard": [
+        "Saint Vincent"
+      ]
+    },
+    {
+      "term": "Magnolia House",
+      "category": "customer",
+      "note": "Care group (Magnolia House, Eden House)"
+    },
+    {
+      "term": "Eden House",
+      "category": "customer",
+      "note": "Care group (Magnolia House, Eden House)"
+    },
+    {
+      "term": "Optalis",
+      "category": "customer",
+      "note": "Council-run care group with many sites",
+      "misheard": [
+        "Optallis",
+        "Opta lis"
+      ]
+    },
+    {
+      "term": "RMBI",
+      "category": "customer",
+      "note": "RMBI care group (Royal Masonic)",
+      "misheard": [
+        "R M B I"
+      ]
+    },
+    {
+      "term": "Zetland Court",
+      "category": "customer",
+      "note": "RMBI care group (Royal Masonic)"
+    },
+    {
+      "term": "Barford Court",
+      "category": "customer",
+      "note": "RMBI care group (Royal Masonic)"
+    },
+    {
+      "term": "Connaught Court",
+      "category": "customer",
+      "note": "RMBI care group (Royal Masonic)"
+    },
+    {
+      "term": "Queen Elizabeth Court",
+      "category": "customer",
+      "note": "RMBI care group (Royal Masonic)"
+    },
+    {
+      "term": "CHD Living",
+      "category": "customer",
+      "note": "Care group",
+      "misheard": [
+        "C H D Living"
+      ]
+    },
+    {
+      "term": "The Summers",
+      "category": "customer",
+      "note": "Care group"
+    },
+    {
+      "term": "Surbiton Care",
+      "category": "customer",
+      "note": "Care group"
+    },
+    {
+      "term": "Morven House",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Morven"
+      ]
+    },
+    {
+      "term": "Medicrest",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Medi crest"
+      ]
+    },
+    {
+      "term": "Caring Interiors",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Apple Hill",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Boyn Grove",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Boyne Grove"
+      ]
+    },
+    {
+      "term": "Centurion Healthcare",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Wisteria Lodge",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Bradbury House",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Bradbury"
+      ]
+    },
+    {
+      "term": "Penley Grange",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Penly Grange"
+      ]
+    },
+    {
+      "term": "Penley View",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Waymead",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Way Mead"
+      ]
+    },
+    {
+      "term": "Easterlea",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Easter Lee"
+      ]
+    },
+    {
+      "term": "Meadowside",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Hightown",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "High Town"
+      ]
+    },
+    {
+      "term": "Ariadni",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Ariadne"
+      ]
+    },
+    {
+      "term": "Cardinal Clinic",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Herewards House",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Herewards"
+      ]
+    },
+    {
+      "term": "Eton House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Belamie Gables",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Bellamy Gables"
+      ]
+    },
+    {
+      "term": "Chartridge Lane",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Abell Gardens",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Able Gardens"
+      ]
+    },
+    {
+      "term": "Oakbridge Day Centre",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Assured Mobility",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Willis Moss",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Samson Centre",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Lovat House",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Lovatt House"
+      ]
+    },
+    {
+      "term": "Snazaroo",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Snazzaroo"
+      ]
+    },
+    {
+      "term": "Hestia",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Premium Care Group",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Ridgemede",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Ridge Mead"
+      ]
+    },
+    {
+      "term": "Acorn Care Homes",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Turnstone Support",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Hassingham House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Forest Healthcare",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Woodlands Park",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Austenwood",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Austen Wood"
+      ]
+    },
+    {
+      "term": "Upalong",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Up Along"
+      ]
+    },
+    {
+      "term": "Brill House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Hammersmith & Fulham",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Hammersmith and Fulham"
+      ]
+    },
+    {
+      "term": "Ashchurch",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Northcourt Lodge",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Culwood House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Charters School",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Hanwell House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "LD Care",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "L D Care"
+      ]
+    },
+    {
+      "term": "REACH",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Sistine Manor",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Ballards Ash",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Choice Care",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Radian",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Cleeve Lodge",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Nashley House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Valorum Care",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "Valorem Care"
+      ]
+    },
+    {
+      "term": "John Masefield House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Lyric Theatre Hammersmith",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Enbridge House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Certitude",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Fearnley",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Felbury House",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "St Ronans",
+      "category": "customer",
+      "note": "Key/core customer list 2025",
+      "misheard": [
+        "St Ronan's"
+      ]
+    },
+    {
+      "term": "Thames Hospice",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Reading Borough Council",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Windsor Forest Colleges Group",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "South Thames Colleges Group",
+      "category": "customer",
+      "note": "Key/core customer list 2025"
+    },
+    {
+      "term": "Haldane House",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Bluebell",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Churchview",
+      "category": "customer",
+      "note": "Customer folders / order forms",
+      "misheard": [
+        "Church View"
+      ]
+    },
+    {
+      "term": "Foxleigh Grove",
+      "category": "customer",
+      "note": "Customer folders / order forms",
+      "misheard": [
+        "Foxley Grove"
+      ]
+    },
+    {
+      "term": "Harwood House",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "The Hollies",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Lifecare",
+      "category": "customer",
+      "note": "Customer folders / order forms",
+      "misheard": [
+        "Life Care"
+      ]
+    },
+    {
+      "term": "Mulberry Lifecare",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Nicholas House",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Trustmark Care",
+      "category": "customer",
+      "note": "Customer folders / order forms",
+      "misheard": [
+        "Trust Mark"
+      ]
+    },
+    {
+      "term": "Salveocare",
+      "category": "customer",
+      "note": "Customer folders / order forms",
+      "misheard": [
+        "Salveo Care",
+        "Salvio Care"
+      ]
+    },
+    {
+      "term": "Shedfield Lodge",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Rayners",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Larchfield",
+      "category": "customer",
+      "note": "Customer folders / order forms",
+      "misheard": [
+        "Larch Field"
+      ]
+    },
+    {
+      "term": "Cliff Homes",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Peverel Court",
+      "category": "customer",
+      "note": "Customer folders / order forms",
+      "misheard": [
+        "Peveril Court"
+      ]
+    },
+    {
+      "term": "Derriford",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Cantelowes",
+      "category": "customer",
+      "note": "Customer folders / order forms",
+      "misheard": [
+        "Cantaloupes"
+      ]
+    },
+    {
+      "term": "Bagshot Park",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Care Legacy Southwest",
+      "category": "customer",
+      "note": "Customer folders / order forms"
+    },
+    {
+      "term": "Mediq",
+      "category": "supplier",
+      "note": "Supplier (Milton etc.); credit notes via Luis",
+      "misheard": [
+        "Medic",
+        "Medik"
+      ]
+    },
+    {
+      "term": "International Tissue",
+      "category": "supplier",
+      "note": "Paper/tissue supplier"
+    },
+    {
+      "term": "PartsCentre",
+      "category": "supplier",
+      "note": "Henry Hoover bag source",
+      "misheard": [
+        "Parts Centre"
+      ]
+    },
+    {
+      "term": "Fairfield",
+      "category": "supplier",
+      "note": "Legacy supplier refs in product data"
+    },
+    {
+      "term": "Technoclean",
+      "category": "supplier",
+      "note": "Legacy supplier refs in product data",
+      "misheard": [
+        "Techno Clean"
+      ]
+    },
+    {
+      "term": "Blueleaf",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Blue Leaf"
+      ]
+    },
+    {
+      "term": "Modu",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Nursing Hygiene",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Selden",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Seldon"
+      ]
+    },
+    {
+      "term": "Bunzl",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Bunzel"
+      ]
+    },
+    {
+      "term": "Booker",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Gompels",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Gompel's"
+      ]
+    },
+    {
+      "term": "Numatic",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Robert Scott",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Polyco",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Swiftpak",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Swift Pack"
+      ]
+    },
+    {
+      "term": "Premium Wipes and Textiles",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Coventry Chemicals",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Direct Chemical Solutions",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Trichem",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Tri Chem"
+      ]
+    },
+    {
+      "term": "Prochem",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Pro Chem"
+      ]
+    },
+    {
+      "term": "Cleenol",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Steelite",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Gratnells",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Baumhaus",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Bow House"
+      ]
+    },
+    {
+      "term": "2Pure",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "To Pure"
+      ]
+    },
+    {
+      "term": "Jodal",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Sleep-Knit",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Sleep Knit"
+      ]
+    },
+    {
+      "term": "Stretch2Fit",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Stretch to Fit"
+      ]
+    },
+    {
+      "term": "Winncare",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Win Care"
+      ]
+    },
+    {
+      "term": "Harvest Healthcare",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Accora",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings"
+    },
+    {
+      "term": "Drive DeVilbiss",
+      "category": "supplier",
+      "note": "Consumables suppliers discussed in meetings",
+      "misheard": [
+        "Drive Devil Bliss"
+      ]
+    },
+    {
+      "term": "Arjo",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers",
+      "misheard": [
+        "Arjoe"
+      ]
+    },
+    {
+      "term": "Invacare",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers",
+      "misheard": [
+        "Inva care"
+      ]
+    },
+    {
+      "term": "Joerns",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers",
+      "misheard": [
+        "Jorns"
+      ]
+    },
+    {
+      "term": "Guldmann",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers",
+      "misheard": [
+        "Guldman"
+      ]
+    },
+    {
+      "term": "Alerta",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers"
+    },
+    {
+      "term": "Apex Medical",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers"
+    },
+    {
+      "term": "Chanter Biomed",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers"
+    },
+    {
+      "term": "Silvalea",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers",
+      "misheard": [
+        "Silva Lea"
+      ]
+    },
+    {
+      "term": "Seca",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers"
+    },
+    {
+      "term": "Unihoist",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers",
+      "misheard": [
+        "Uni hoist"
+      ]
+    },
+    {
+      "term": "Malsch",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers"
+    },
+    {
+      "term": "Prism Medical",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers"
+    },
+    {
+      "term": "Etac",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers",
+      "misheard": [
+        "Etak"
+      ]
+    },
+    {
+      "term": "Molift",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers",
+      "misheard": [
+        "Mo lift"
+      ]
+    },
+    {
+      "term": "Casalift",
+      "category": "supplier",
+      "note": "Care equipment / servicing parts suppliers"
+    },
+    {
+      "term": "FallSavers",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "Fall Savers"
+      ]
+    },
+    {
+      "term": "C-TEC",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "C tech",
+        "Sea tech"
+      ]
+    },
+    {
+      "term": "Quantec",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "Quantek"
+      ]
+    },
+    {
+      "term": "Courtney Thorne",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "Courtney Thorn"
+      ]
+    },
+    {
+      "term": "Aidcall",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "Aid Call"
+      ]
+    },
+    {
+      "term": "Legrand",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)"
+    },
+    {
+      "term": "Ramblegard",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "Ramble guard"
+      ]
+    },
+    {
+      "term": "Alert-iT",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "Alert IT"
+      ]
+    },
+    {
+      "term": "MaxAlert",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "Max Alert"
+      ]
+    },
+    {
+      "term": "Tunstall",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)"
+    },
+    {
+      "term": "Intercall",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)",
+      "misheard": [
+        "Inter call"
+      ]
+    },
+    {
+      "term": "Touchsafe",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)"
+    },
+    {
+      "term": "RGS",
+      "category": "supplier",
+      "note": "Nurse call / sensor brands (Safeguarding Configurator)"
+    },
+    {
+      "term": "Feelers",
+      "category": "product",
+      "note": "Glove/apron brand on SKU descriptions"
+    },
+    {
+      "term": "Exel Revolution",
+      "category": "product",
+      "note": "Mop heads",
+      "misheard": [
+        "Excel Revolution"
+      ]
+    },
+    {
+      "term": "Exel",
+      "category": "product",
+      "note": "Mop heads",
+      "misheard": [
+        "Excel"
+      ]
+    },
+    {
+      "term": "OdorBac",
+      "category": "product",
+      "note": "Odour eliminator range",
+      "misheard": [
+        "Odour Back",
+        "Odor Bac"
+      ]
+    },
+    {
+      "term": "AMD",
+      "category": "product",
+      "note": "Continence products"
+    },
+    {
+      "term": "TENA",
+      "category": "product",
+      "note": "Continence products",
+      "misheard": [
+        "Tena",
+        "Tenna"
+      ]
+    },
+    {
+      "term": "Tenaflex",
+      "category": "product",
+      "note": "Continence products",
+      "misheard": [
+        "Tena Flex"
+      ]
+    },
+    {
+      "term": "Tenaslip",
+      "category": "product",
+      "note": "Continence products",
+      "misheard": [
+        "Tena Slip"
+      ]
+    },
+    {
+      "term": "Clinell",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Clinel",
+        "Clinnel"
+      ]
+    },
+    {
+      "term": "Velette",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Velet"
+      ]
+    },
+    {
+      "term": "Zoflora",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Zo flora"
+      ]
+    },
+    {
+      "term": "Viakal",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Via Cal"
+      ]
+    },
+    {
+      "term": "Milton",
+      "category": "product",
+      "note": "Cleaning/chemical brands"
+    },
+    {
+      "term": "Selpine",
+      "category": "product",
+      "note": "Cleaning/chemical brands"
+    },
+    {
+      "term": "Chemical Essential",
+      "category": "product",
+      "note": "Cleaning/chemical brands"
+    },
+    {
+      "term": "Handsafe",
+      "category": "product",
+      "note": "Cleaning/chemical brands"
+    },
+    {
+      "term": "Solubags",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Soluble bags"
+      ]
+    },
+    {
+      "term": "Henry Hoover",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Henry hoover"
+      ]
+    },
+    {
+      "term": "Roomcare",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Room Care"
+      ]
+    },
+    {
+      "term": "Ultra Fresh Pro",
+      "category": "product",
+      "note": "Cleaning/chemical brands"
+    },
+    {
+      "term": "GemClean",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Gem Clean"
+      ]
+    },
+    {
+      "term": "Soluclean",
+      "category": "product",
+      "note": "Cleaning/chemical brands"
+    },
+    {
+      "term": "Aquadet",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Aqua Det"
+      ]
+    },
+    {
+      "term": "Airsteril",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Air Steril"
+      ]
+    },
+    {
+      "term": "Rovawash",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Rover wash"
+      ]
+    },
+    {
+      "term": "Eco-Knit",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Eco Knit"
+      ]
+    },
+    {
+      "term": "Lemon Jell",
+      "category": "product",
+      "note": "Cleaning/chemical brands"
+    },
+    {
+      "term": "Pink Pearl",
+      "category": "product",
+      "note": "Cleaning/chemical brands"
+    },
+    {
+      "term": "J-cloths",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "J cloths"
+      ]
+    },
+    {
+      "term": "V-Fold",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "V fold"
+      ]
+    },
+    {
+      "term": "C-Fold",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "C fold"
+      ]
+    },
+    {
+      "term": "Z-fold",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Z fold"
+      ]
+    },
+    {
+      "term": "Inter-Fold",
+      "category": "product",
+      "note": "Cleaning/chemical brands",
+      "misheard": [
+        "Interfold"
+      ]
+    },
+    {
+      "term": "PV110",
+      "category": "product",
+      "note": "Provida own-label chemical range codes"
+    },
+    {
+      "term": "PV210",
+      "category": "product",
+      "note": "Provida own-label chemical range codes"
+    },
+    {
+      "term": "PV510",
+      "category": "product",
+      "note": "Provida own-label chemical range codes"
+    },
+    {
+      "term": "PV610",
+      "category": "product",
+      "note": "Provida own-label chemical range codes"
+    },
+    {
+      "term": "2510",
+      "category": "product",
+      "note": "Provida own-label chemical range codes"
+    },
+    {
+      "term": "2520",
+      "category": "product",
+      "note": "Provida own-label chemical range codes"
+    },
+    {
+      "term": "2530",
+      "category": "product",
+      "note": "Provida own-label chemical range codes"
+    },
+    {
+      "term": "H060EXYEL",
+      "category": "product",
+      "note": "Codes Harley writes in emails"
+    },
+    {
+      "term": "DIS015",
+      "category": "product",
+      "note": "Codes Harley writes in emails"
+    },
+    {
+      "term": "RJCON6P6C",
+      "category": "product",
+      "note": "Codes Harley writes in emails"
+    },
+    {
+      "term": "NCMONO",
+      "category": "product",
+      "note": "Codes Harley writes in emails"
+    },
+    {
+      "term": "NCSTEREO",
+      "category": "product",
+      "note": "Codes Harley writes in emails"
+    },
+    {
+      "term": "CTCCL",
+      "category": "product",
+      "note": "Codes Harley writes in emails"
+    },
+    {
+      "term": "COSHH",
+      "category": "acronym",
+      "note": "Hazardous substances regs; core Provida service",
+      "misheard": [
+        "cosh",
+        "Kosh",
+        "COSH"
+      ]
+    },
+    {
+      "term": "SDS",
+      "category": "acronym",
+      "note": "Safety data sheets",
+      "misheard": [
+        "S D S"
+      ]
+    },
+    {
+      "term": "MSDS",
+      "category": "acronym",
+      "note": "Safety data sheets"
+    },
+    {
+      "term": "CLP",
+      "category": "acronym",
+      "note": "Safety data sheets"
+    },
+    {
+      "term": "GHS",
+      "category": "acronym",
+      "note": "Safety data sheets"
+    },
+    {
+      "term": "CQC",
+      "category": "acronym",
+      "note": "Care regulator",
+      "misheard": [
+        "C Q C"
+      ]
+    },
+    {
+      "term": "LOLER",
+      "category": "acronym",
+      "note": "Lifting equipment regs (hoist servicing)",
+      "misheard": [
+        "Lola",
+        "Loler"
+      ]
+    },
+    {
+      "term": "SKU",
+      "category": "acronym",
+      "note": "Order/stock jargon",
+      "misheard": [
+        "skew"
+      ]
+    },
+    {
+      "term": "POD",
+      "category": "acronym",
+      "note": "Order/stock jargon",
+      "misheard": [
+        "P O D"
+      ]
+    },
+    {
+      "term": "VAT",
+      "category": "acronym",
+      "note": "Order/stock jargon"
+    },
+    {
+      "term": "T0",
+      "category": "acronym",
+      "note": "Order/stock jargon",
+      "misheard": [
+        "T zero"
+      ]
+    },
+    {
+      "term": "KPI",
+      "category": "acronym",
+      "note": "Order/stock jargon"
+    },
+    {
+      "term": "NPS",
+      "category": "acronym",
+      "note": "Order/stock jargon"
+    },
+    {
+      "term": "SOP",
+      "category": "acronym",
+      "note": "Order/stock jargon"
+    },
+    {
+      "term": "RAMS",
+      "category": "acronym",
+      "note": "Order/stock jargon"
+    },
+    {
+      "term": "BICSc",
+      "category": "acronym",
+      "note": "Order/stock jargon",
+      "misheard": [
+        "bix"
+      ]
+    },
+    {
+      "term": "H&S",
+      "category": "acronym",
+      "note": "Order/stock jargon",
+      "misheard": [
+        "H and S"
+      ]
+    },
+    {
+      "term": "O2I",
+      "category": "acronym",
+      "note": "Order/stock jargon"
+    },
+    {
+      "term": "ASTM",
+      "category": "acronym",
+      "note": "Order/stock jargon"
+    },
+    {
+      "term": "Type IIR",
+      "category": "acronym",
+      "note": "Order/stock jargon",
+      "misheard": [
+        "type 2R"
+      ]
+    },
+    {
+      "term": "PPE",
+      "category": "acronym",
+      "note": "Order/stock jargon"
+    },
+    {
+      "term": "AADSTS",
+      "category": "acronym",
+      "note": "Microsoft auth error code prefix"
+    },
+    {
+      "term": "SSO",
+      "category": "acronym",
+      "note": "Tech acronyms"
+    },
+    {
+      "term": "MFA",
+      "category": "acronym",
+      "note": "Tech acronyms"
+    },
+    {
+      "term": "JSON",
+      "category": "acronym",
+      "note": "Tech acronyms"
+    },
+    {
+      "term": "SQL",
+      "category": "acronym",
+      "note": "Tech acronyms"
+    },
+    {
+      "term": "CLI",
+      "category": "acronym",
+      "note": "Tech acronyms"
+    },
+    {
+      "term": "APK",
+      "category": "acronym",
+      "note": "Tech acronyms"
+    },
+    {
+      "term": "WCF",
+      "category": "acronym",
+      "note": "Tech acronyms"
+    },
+    {
+      "term": "Berkshire",
+      "category": "place",
+      "note": "Office location area"
+    },
+    {
+      "term": "Maidenhead",
+      "category": "place",
+      "note": "Office location area"
+    },
+    {
+      "term": "Horndean",
+      "category": "place",
+      "note": "Customer/service areas",
+      "misheard": [
+        "Horn Dean"
+      ]
+    },
+    {
+      "term": "Aylesbury",
+      "category": "place",
+      "note": "Customer/service areas",
+      "misheard": [
+        "Ailsbury"
+      ]
+    },
+    {
+      "term": "Bracknell",
+      "category": "place",
+      "note": "Customer/service areas"
+    },
+    {
+      "term": "Ascot",
+      "category": "place",
+      "note": "Customer/service areas"
+    },
+    {
+      "term": "Banbury",
+      "category": "place",
+      "note": "Customer/service areas"
+    },
+    {
+      "term": "Chesham",
+      "category": "place",
+      "note": "Customer/service areas",
+      "misheard": [
+        "Chess um"
+      ]
+    },
+    {
+      "term": "Hammersmith",
+      "category": "place",
+      "note": "Customer/service areas"
+    },
+    {
+      "term": "Fulham",
+      "category": "place",
+      "note": "Customer/service areas"
+    },
+    {
+      "term": "Bagshot",
+      "category": "place",
+      "note": "Customer/service areas"
+    }
+  ],
+  "styleNotes": [
+    "British English spelling throughout (fulfilment, colour, organise, catalogue, authorised); money in £, dates like '21 October 2026', 24-hour or '2pm' times.",
+    "Company is always 'Provida', never 'Provida UK'. Keep system names capitalised exactly: Syrinx, Papertrail, Conduit, Trengo, ERPNext, Stockup, COSHH.",
+    "Teams chat with colleagues is very casual: mostly lowercase, no full stops, trailing '...', shorthand lmk, kk, np, tyvm, mb, idk, tbh, lol, 'u', 'mtg'.",
+    "Nicknames: Mo (Mojola), Phil (Philip), GG (Graham Gilbert), HWG (himself); calls Neil 'Dad' when writing to staff.",
+    "Internal emails open 'Hi Mojola and Lavinia,', 'Hey Mo,', 'Morning Mo,', 'Afternoon Lavinia,' or 'Hello All,' and close 'Thanks,' + 'Harley'. Friendly emoji (😊 🙂) are common.",
+    "External emails (suppliers, Trengo, IT provider, UBT) are polite and short in full sentences, closing 'Kind regards,' or 'Best,' + 'Harley'.",
+    "Uses a hyphen with a trailing space as a dash ('yet- does this make sense?', 'btw', 'FYI-'); rarely types em dashes himself.",
+    "Staff updates are plain and practical: a short title, what changed, numbered or bulleted steps, concrete numbers and percentages, and what staff must do.",
+    "Product codes, SKUs and part numbers stay uppercase and unspaced exactly as written (H060EXYEL, DIS015, RJCON6P6C, PV210).",
+    "Phone replies (Outlook for Android) are one or two quick, informal sentences; self-corrections are flagged with 'Sorry-' or '*' and 'mb'."
+  ]
+}

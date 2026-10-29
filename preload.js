@@ -40,6 +40,22 @@ for (const k of BYOK_KEY_BRIDGES) {
   secretKeyApi[k.save] = (key) => ipcRenderer.invoke(`save-${k.base}-key`, key);
 }
 
+// Personal preset (src/helpers/personalPreset.js): write its settings into
+// localStorage before the settings store reads it. Waits for onboarding, which
+// writes its own provider choices, then applies once per preset version.
+(function applyPersonalPresetSettings() {
+  try {
+    const storage = globalThis.localStorage;
+    if (!storage || storage.getItem("onboardingCompleted") !== "true") return;
+    const preset = ipcRenderer.sendSync("personal-preset:get-settings");
+    if (!preset || storage.getItem("personalPresetVersion") === preset.version) return;
+    for (const [key, value] of Object.entries(preset.settings)) {
+      storage.setItem(key, typeof value === "string" ? value : JSON.stringify(value));
+    }
+    storage.setItem("personalPresetVersion", preset.version);
+  } catch {}
+})();
+
 /**
  * Helper to register an IPC listener and return a cleanup function.
  * Ensures renderer code can easily remove listeners to avoid leaks.

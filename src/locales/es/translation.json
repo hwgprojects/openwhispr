@@ -2782,6 +2782,7 @@
         "corti_corti_s1_mini_instant": "Modelo sanitario compacto, el más rápido y económico",
         "corti_corti_s1_mini": "Modelo clínico compacto con razonamiento a mitad de precio",
         "openai_gpt_6_1_sol": "Capacidad cercana a Astra para chat y tareas agénticas a menor coste",
+        "openai_gpt_6_1_terra": "Balanced GPT-6.1 for everyday work",
         "openai_gpt_6_luna": "El GPT-6 más rápido y económico",
         "gemini_gemini_3_6_flash": "Modelo Gemini rápido y de alta capacidad",
         "gemini_gemini_3_8_flash": "El modelo Flash más capaz",

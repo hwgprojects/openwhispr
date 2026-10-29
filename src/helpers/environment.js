@@ -103,10 +103,20 @@ class EnvironmentManager {
   // both no-ops on fresh installs, so neither path triggers Keychain until
   // the user actually saves their first secret.
   async init() {
+    this._adoptAudioKey();
     if (!fs.existsSync(this._getMigrationSentinelPath())) {
       await this._migrateToSecureStorage();
     }
     await this._loadAllSecrets();
+    this._adoptAudioKey();
+  }
+
+  // AUDIO_KEY, when set in the user's environment, is this install's OpenAI
+  // key. It wins over a stored key and over an inherited OPENAI_API_KEY, which
+  // other tools on the machine may set to a different (or stale) key.
+  _adoptAudioKey() {
+    const audioKey = (process.env.AUDIO_KEY || "").trim();
+    if (audioKey) process.env.OPENAI_API_KEY = audioKey;
   }
 
   _getMigrationSentinelPath() {

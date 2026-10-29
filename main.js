@@ -449,6 +449,32 @@ function wasLaunchedAtLoginHidden() {
   }
 }
 
+// Seeds dictionary words from the personal preset and serves its settings to
+// the preload, which needs them synchronously before the settings store loads.
+function setupPersonalPreset() {
+  const personalPreset = require("./src/helpers/personalPreset");
+  const dirs = {
+    userDataDir: app.getPath("userData"),
+    bundledDir: personalPreset.bundledPresetDir({
+      isPackaged: app.isPackaged,
+      resourcesPath: process.resourcesPath,
+      appRoot: __dirname,
+    }),
+  };
+  try {
+    personalPreset.seedDictionary({ databaseManager, logger: debugLogger, ...dirs });
+  } catch (error) {
+    debugLogger.warn("Personal preset dictionary seed failed", { error: error.message }, "preset");
+  }
+  ipcMain.on("personal-preset:get-settings", (event) => {
+    try {
+      event.returnValue = personalPreset.presetSettings(dirs);
+    } catch {
+      event.returnValue = null;
+    }
+  });
+}
+
 function initializeCoreManagers() {
   setupProductionPath();
 
@@ -498,6 +524,7 @@ function initializeCoreManagers() {
     binding: accountScopeBinding.read(),
   });
   if (bootAccountId) databaseManager.setActiveAccountId(bootAccountId);
+  setupPersonalPreset();
   clipboardManager = new ClipboardManager();
   const { createConnectorManager } = require("./src/helpers/connectors/connectorManager");
   const { createPendingActions } = require("./src/helpers/connectors/pendingActions");

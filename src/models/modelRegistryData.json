@@ -504,6 +504,19 @@
           }
         },
         {
+          "id": "gpt-6.1-terra",
+          "name": "GPT-6.1 Terra",
+          "description": "Balanced GPT-6.1 for everyday work, 1M context",
+          "descriptionKey": "models.descriptions.cloud.openai_gpt_6_1_terra",
+          "tokenParam": "max_completion_tokens",
+          "supportsTemperature": false,
+          "supportsVision": true,
+          "reasoningEffort": {
+            "options": ["none", "low", "medium", "high", "xhigh", "max"],
+            "defaultValue": "medium"
+          }
+        },
+        {
           "id": "gpt-6-luna",
           "name": "GPT-6 Luna",
           "description": "Fastest and lowest-cost GPT-6 model, 1M context",
