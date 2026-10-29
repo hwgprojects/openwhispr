@@ -103,7 +103,6 @@ class EnvironmentManager {
   // both no-ops on fresh installs, so neither path triggers Keychain until
   // the user actually saves their first secret.
   async init() {
-    this._adoptAudioKey();
     if (!fs.existsSync(this._getMigrationSentinelPath())) {
       await this._migrateToSecureStorage();
     }
@@ -113,10 +112,21 @@ class EnvironmentManager {
 
   // AUDIO_KEY, when set in the user's environment, is this install's OpenAI
   // key. It wins over a stored key and over an inherited OPENAI_API_KEY, which
-  // other tools on the machine may set to a different (or stale) key.
+  // other tools on the machine may set to a different (or stale) key. It is
+  // never written to secure-keys, so rotating or removing AUDIO_KEY takes effect
+  // on the next launch.
+  _audioKey() {
+    return (process.env.AUDIO_KEY || "").trim();
+  }
+
   _adoptAudioKey() {
-    const audioKey = (process.env.AUDIO_KEY || "").trim();
+    const audioKey = this._audioKey();
     if (audioKey) process.env.OPENAI_API_KEY = audioKey;
+  }
+
+  // An OpenAI key saved in the app while AUDIO_KEY is set is ignored.
+  _audioKeyOwns(envVarName) {
+    return envVarName === "OPENAI_API_KEY" && Boolean(this._audioKey());
   }
 
   _getMigrationSentinelPath() {
@@ -161,6 +171,10 @@ class EnvironmentManager {
   }
 
   async _saveSecretKey(envVarName, value) {
+    if (this._audioKeyOwns(envVarName)) {
+      this._adoptAudioKey();
+      return;
+    }
     if (!value) {
       await this._deleteSecretKey(envVarName);
       return;
@@ -203,7 +217,7 @@ class EnvironmentManager {
     try {
       for (const name of SECRET_KEYS) {
         const value = process.env[name];
-        if (!value) continue;
+        if (!value || this._audioKeyOwns(name)) continue;
         await this._saveSecretKey(name, value);
         // Round-trip verify before stripping plaintext .env.
         const buffer = await fsPromises.readFile(this._getSecretFilePath(name));
@@ -261,6 +275,10 @@ class EnvironmentManager {
   }
 
   _saveKey(envVarName, key) {
+    if (this._audioKeyOwns(envVarName)) {
+      this._adoptAudioKey();
+      return { success: true };
+    }
     if (SECRET_KEY_SET.has(envVarName) && this._encryptionAvailable()) {
       this._saveSecretKey(envVarName, key).catch((error) => {
         debugLogger.error(

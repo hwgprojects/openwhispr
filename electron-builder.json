@@ -103,7 +103,7 @@
     {
       "from": "presets",
       "to": "presets",
-      "filter": ["*.json", "*.txt"]
+      "filter": ["personal-preset.json", "*.txt"]
     },
     {
       "from": "src/assets",

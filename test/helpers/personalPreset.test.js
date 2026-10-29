@@ -74,3 +74,14 @@ test("the shipped preset parses and names only settings strings or objects", () 
     assert.ok(typeof value === "string" || typeof value === "object", key);
   }
 });
+
+test("every preset setting is a key the settings store reads", () => {
+  const root = path.join(__dirname, "..", "..");
+  const sources = ["src/stores/settingsStore.ts", "src/config/inferenceScopes.ts"]
+    .map((file) => fs.readFileSync(path.join(root, file), "utf8"))
+    .join("\n");
+  const loaded = preset.loadPersonalPreset({ userDataDir: null, bundledDir: path.join(root, "presets") });
+  for (const key of Object.keys(loaded.preset.settings)) {
+    assert.ok(sources.includes(`"${key}"`), `no settings reader for ${key}`);
+  }
+});
