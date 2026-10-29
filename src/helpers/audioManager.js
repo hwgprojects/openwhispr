@@ -4253,8 +4253,10 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
             "file",
             "model",
             language && language !== "auto" ? "language" : null,
+            dictionaryPrompt && model !== "orukeet-v0.1.0" ? "prompt" : null,
             shouldStream ? "stream" : null,
           ].filter(Boolean),
+          keywordCount: usesKeywords ? dictionaryKeywords(keywordDictionary).length : 0,
         },
         "transcription"
       );

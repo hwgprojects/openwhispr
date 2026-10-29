@@ -14,6 +14,10 @@
 // sides are updated).
 
 export const RETIRED_DEFAULT_PROMPT_HASHES = new Set([
+  //  3361ch hwg fork en cleanupPrompt, second Provida version
+  "94afd1970fccb344b6758d13511f860102da8185a9e1810bd3fe105945dbe97c",
+  //  3278ch hwg fork en cleanupPrompt, first Provida version
+  "f86b2eec1613ef43e92cfb2c49db5b510618c1f296d5c5059ad3a16371e57d69",
   //  2227ch upstream en cleanupPrompt (replaced by the hwg fork's Provida prompt)
   "58ed65fbc679a7bac1483ef850c51ac7932a02d17fab9ca688f4d11f6aa9b7e6",
   //    65ch 28ac9b59 ReasoningService.ts DEFAULT_PROMPTS.regular (+24 more)
@@ -94,7 +98,7 @@ export const CURRENT_DEFAULT_PROMPT_HASHES = {
   "de/cleanupPrompt": "89452bfcce253803ae9fd9b0e9fc3f50afbf9c8d89706ad92dfc48d1e29ec4af",
   "de/fullPrompt": "9312644f8de56d874e0de9e18d610a3ed6afd0ca1b31411f02d021e012fee601",
   "de/translatePrompt": "818b9176518120cd7889726574b61026733ffb69768d3d00e417c28389e5875e",
-  "en/cleanupPrompt": "f86b2eec1613ef43e92cfb2c49db5b510618c1f296d5c5059ad3a16371e57d69",
+  "en/cleanupPrompt": "a6cd391a54de0968d2a62f582011b88d44ed7c071cf357fc0fa6244823bc1257",
   "en/fullPrompt": "9312644f8de56d874e0de9e18d610a3ed6afd0ca1b31411f02d021e012fee601",
   "en/translatePrompt": "2acf77e82671cfb27f56210461369cca96da52d68597dd825bb5f3cf7fd4cd47",
   "es/cleanupPrompt": "3a977c7d5435d799873a1003d68924b08a51d720386fe8cc9ac16304607df56d",

@@ -1,6 +1,6 @@
 {
   "$comment": "Personal preset for Harley (HWG). Applied once after onboarding, and again when version changes. See src/helpers/personalPreset.js.",
-  "version": "2026-10-29.1",
+  "version": "2026-10-29.2",
   "dictionaryFiles": [
     "provida-terms.txt"
   ],
@@ -15,7 +15,7 @@
     "cleanupCloudMode": "byok",
     "cleanupProvider": "openai",
     "cleanupModel": "gpt-6-luna",
-    "cleanupReasoningEffort": "low",
+    "cleanupReasoningEffort": "none",
     "toneStyleEnabled": "true",
     "toneStyles": {
       "personal": "very_casual",

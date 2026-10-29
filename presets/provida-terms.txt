@@ -1,23 +1,42 @@
+# Order matters: gpt-transcribe weights roughly the first 25 terms; the rest reach the cleanup model.
 Provida
+Syrinx
+Lyrinx
+Conduit
+Papertrail
+Trengo
+ERPNext
+COSHH
+Luis
+Mojola
+Lavinia
+Schlaudraff
+Thanh
+Dayanara
+LowerConcept
+Stockup
+Claude Code
+Codex
+T3 Code
+Wispr Flow
+HWG
+BICSc
+CQC
+TENA
+Pax Hill
 Neil Gilbert
 Neil
 Harley Gilbert
-HWG
 Lavinia Schlaudraff
-Lavinia
 Mojola Obembe
-Mojola
 Mo
 Graham Gilbert
 GG
 Luis De Sousa
-Luis
 Philip Poulter
 Phil
 Thanh Van Dang
-Thanh
 Dayanara Diaz
-Dayanara
 Donald John Diaz
 Mark Alvarez
 Ali Castro
@@ -30,14 +49,8 @@ Mike Harvey
 Ntombi Hlatswayo
 Russell White
 Chris Northwood
-Syrinx
 SyrinxCWO
 CWO
-Lyrinx
-Conduit
-Papertrail
-LowerConcept
-Stockup
 Atlas
 Smart Layer
 Query Studio
@@ -53,7 +66,6 @@ Provida Fleet
 Safeguarding Configurator
 Provida Transcribe
 Workshop App
-ERPNext
 Frappe
 RAMJET
 AFTERBURNER
@@ -67,7 +79,6 @@ Fulfilment Note
 Advice Note
 Now-Cash
 Pickability
-Trengo
 Constant Contact
 Better Stack
 Guardz
@@ -94,13 +105,9 @@ Shopify B2B
 Magento
 Horizon theme
 WhatsApp
-Claude Code
 Claude
-Codex
 Codex Desktop
-T3 Code
 OpenWhispr
-Wispr Flow
 opencodex
 ChatGPT
 OpenAI
@@ -144,7 +151,6 @@ BeadsPulse
 Chromaplume
 Schlanvas
 SkillCzar
-Pax Hill
 St Vincent Care Homes
 Magnolia House
 Eden House
@@ -307,7 +313,6 @@ Exel Revolution
 Exel
 OdorBac
 AMD
-TENA
 Tenaflex
 Tenaslip
 Clinell
@@ -345,12 +350,10 @@ RJCON6P6C
 NCMONO
 NCSTEREO
 CTCCL
-COSHH
 SDS
 MSDS
 CLP
 GHS
-CQC
 LOLER
 SKU
 POD
@@ -360,7 +363,6 @@ KPI
 NPS
 SOP
 RAMS
-BICSc
 H&S
 O2I
 ASTM
