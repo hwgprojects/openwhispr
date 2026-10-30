@@ -33,7 +33,7 @@ Fork: https://github.com/hwgprojects/openwhispr, branch `hwg/provida-flow`.
   upstream build over this one.
 
 To change the preset without a rebuild, put a `personal-preset.json` (and any word lists it
-names) in `%APPDATA%\OpenWhispr`. That copy wins over the bundled one.
+names) in `%APPDATA%\open-whispr`. That copy wins over the bundled one.
 
 ## Build on Windows
 
