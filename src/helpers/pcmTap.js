@@ -28,6 +28,7 @@ export class PcmTap {
     this._node = null;
     this._source = null;
     this._flushResolve = null;
+    this._sampleListener = null;
     this._context = new AudioContext({ sampleRate: SAMPLE_RATE });
     // Not awaited: resume() can hang when the output device is wedged.
     if (this._context.state === "suspended") this._context.resume().catch(() => {});
@@ -62,6 +63,15 @@ export class PcmTap {
       return;
     }
     this._chunks.push(chunk);
+    this._sampleListener?.(chunk);
+  }
+
+  // Hands every captured chunk to `listener`, starting with those already
+  // captured (pre-roll). The speculative transcription reads the PCM this way.
+  setSampleListener(listener) {
+    this._sampleListener = listener;
+    if (!listener || this._dropped) return;
+    for (const chunk of this._chunks) listener(chunk);
   }
 
   // Feeds the recorder's stream, or moves the tap onto a replacement mic.
@@ -106,6 +116,7 @@ export class PcmTap {
   }
 
   close() {
+    this._sampleListener = null;
     this._chunks = [];
     this._samples = 0;
     this._node?.disconnect();

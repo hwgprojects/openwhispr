@@ -76,6 +76,14 @@ export function applyChatCompletionsParams(
     requestBody.reasoning_effort = familyEffort.cleanupValue;
   }
 
+  // OpenRouter's default routing weighs price, so a latency-bound transform
+  // (dictation cleanup, selection edits) often lands on a slow host. Sorting by
+  // throughput sends it to the fastest one (Cerebras, Groq: ~0.7 s for a
+  // cleanup) and still falls back to the others when that host is down.
+  if (providerKey === "openrouter" && isDeterministicTransform(config)) {
+    requestBody.provider = { sort: "throughput" };
+  }
+
   const suppressed = applyThinkingSuppression(
     requestBody,
     model,

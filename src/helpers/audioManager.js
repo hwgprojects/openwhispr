@@ -36,6 +36,9 @@ import { followsSystemDefaultMic } from "./micSelectionRecovery";
 import { isCacheableMicrophoneResolution, resolvePreferredMicrophone } from "./microphoneSelection";
 import { isStaleDeviceError } from "./staleMicDevice";
 import { shouldSaveDiscardedRecording } from "./discardedRecording";
+import { createConnectionPrewarmer } from "./connectionPrewarm";
+import { createSpeculativeTranscription } from "./speculativeTranscription";
+import { buildWav } from "../utils/wavBuilder";
 import {
   ANALYTICS_COUNTER_VERSION,
   countSpokenWords,
@@ -135,6 +138,7 @@ import { isEmptyRecording } from "./recordingGuard";
 import { startRecordingSpool, takeInterruptedRecordings } from "./recordingSpool";
 import {
   analyzeDictionaryPromptFragment,
+  DICTIONARY_ECHO_CODE,
   dictionaryEchoError,
   matchesDictionaryPrompt,
   payloadSendsDictionaryBias,
@@ -764,6 +768,7 @@ class AudioManager {
     this._previewFlushResolve = null;
     this._batchSegments = [];
     this._batchPcmTap = null;
+    this._speculative = null;
     this._rotatingBatchRecorder = null;
     this._rotationResolve = null;
     this._stopRequestedDuringMicRecovery = false;
@@ -1449,13 +1454,52 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
   // Offline local engines decode a renderer-captured 16 kHz WAV as-is, so the
   // batch recorder gets a PCM shadow (PcmTap). Online models commit their own
   // stream and every cloud lane wants the smaller WebM, so those get none.
+  // BYOK gpt-transcribe dictations are transcribed in pieces while the user
+  // speaks (speculativeTranscription.js), which reads the PCM tap.
+  _usesSpeculativeTranscription(settings = getSettings()) {
+    return (
+      !settings.useLocalWhisper &&
+      settings.cloudTranscriptionMode === "byok" &&
+      (settings.cloudTranscriptionProvider || "openai") === "openai" &&
+      this.getTranscriptionModel() === "gpt-transcribe" &&
+      !getManagedTranscriptionResolution()
+    );
+  }
+
+  _startSpeculativeTranscription(tap) {
+    this._speculative?.discard();
+    this._speculative = null;
+    if (!tap || !this._usesSpeculativeTranscription()) return;
+    const speculative = createSpeculativeTranscription({
+      toWav: buildWav,
+      transcribe: async (wav) => {
+        try {
+          const result = await this.processWithOpenAIAPI(
+            wav,
+            { sttOnly: true, durationSeconds: (wav.size - 44) / 32000 },
+            () => speculative.discarded
+          );
+          return result?.rawText ?? result?.text ?? "";
+        } catch (error) {
+          // A piece with no speech in it adds nothing, as it would in one request.
+          if (error?.code === DICTIONARY_ECHO_CODE) return "";
+          if (/^No text transcribed/.test(error?.message || "")) return "";
+          throw error;
+        }
+      },
+    });
+    this._speculative = speculative;
+    tap.setSampleListener((chunk) => speculative.push(chunk));
+  }
+
   _startPcmTap() {
-    const { useLocalWhisper, localTranscriptionProvider, parakeetModel } = getSettings();
+    const settings = getSettings();
+    const { useLocalWhisper, localTranscriptionProvider, parakeetModel } = settings;
     const offlineLocal =
       useLocalWhisper &&
       !getManagedTranscriptionResolution() &&
       !(localTranscriptionProvider === "nvidia" && isOnlineParakeetModel(parakeetModel));
-    if (!offlineLocal) return null;
+    if (!offlineLocal && !this._usesSpeculativeTranscription(settings)) return null;
     try {
       return new PcmTap(this.getWorkletBlobUrl());
     } catch (e) {
@@ -1465,6 +1509,8 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
   }
 
   _closeBatchPcmTap() {
+    this._speculative?.discard();
+    this._speculative = null;
     this._batchPcmTap?.close();
     this._batchPcmTap = null;
   }
@@ -1599,6 +1645,12 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
         return false;
       }
 
+      // Connect to the transcription and cleanup hosts while the user speaks.
+      this._prewarmConnections ??= createConnectionPrewarmer({
+        fetchImpl: typeof fetch === "function" ? fetch : null,
+      });
+      this._prewarmConnections(getSettings());
+
       const activationGeneration = this._activationCaptureGeneration ?? 0;
       if (
         !(await this._beginActivationCapture()) ||
@@ -1686,6 +1738,7 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
       // or the one built before the mic opened. A tap started now would miss
       // the opening, so an unusable pre-roll leaves the WebM path in charge.
       this._batchPcmTap = preRoll ? prepared.pcmTap : freshTap;
+      this._startSpeculativeTranscription(this._batchPcmTap);
       this._recordingSpool = this._startRecordingSpool();
       this.createBatchRecorder(micStream, preRoll);
       freshTap?.attach(micStream);
@@ -1890,6 +1943,8 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
     });
     const rawWavPromise = this._batchPcmTap?.stop();
     this._batchPcmTap = null;
+    const speculative = this._speculative;
+    this._speculative = null;
     this.isRecording = false;
     this.isProcessing = true;
     this.onStateChange?.({
@@ -1964,6 +2019,10 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
     }
     this._streamingCommitActive = false;
     const rawWav = await rawWavPromise;
+    // The pieces only stand in for the recording when the PCM copy covers all
+    // of it; otherwise the WebM goes out whole as before.
+    const useSpeculative = !!speculative && !!rawWav && speculative.segmentCount > 0;
+    if (speculative && !useSpeculative) speculative.discard();
 
     await this.processAudio(
       audioBlob,
@@ -1972,7 +2031,7 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
         analyticsOccurredAt,
         ...(salvagedRecording ? { salvagedRecording: true } : {}),
         ...(previewStop?.streamed ? { streamedText: previewStop.text } : {}),
-        ...(rawWav ? { rawWav } : {}),
+        ...(useSpeculative ? { speculative } : rawWav ? { rawWav } : {}),
       },
       processingPipeline
     );
@@ -3984,6 +4043,44 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
         "transcription"
       );
 
+      // Pieces cut and transcribed while the user spoke (speculativeTranscription.js)
+      // leave only the tail to send now. Any failure sends the whole recording below.
+      if (metadata.speculative && provider === "openai" && model === "gpt-transcribe") {
+        const speculativeStart = performance.now();
+        let joined = null;
+        try {
+          joined = await metadata.speculative.finish();
+        } catch (error) {
+          if (!wasCancelled()) {
+            logger.warn(
+              "Speculative transcription failed; sending the whole recording",
+              { error: error.message },
+              "transcription"
+            );
+          }
+        }
+        if (wasCancelled()) throw new DOMException("Transcription cancelled", "AbortError");
+        if (joined) {
+          timings.transcriptionProcessingDurationMs = Math.round(
+            performance.now() - speculativeStart
+          );
+          logger.debug(
+            "Speculative transcription used",
+            {
+              pieces: metadata.speculative.segmentCount,
+              textLength: joined.length,
+              tailWaitMs: timings.transcriptionProcessingDurationMs,
+            },
+            "transcription"
+          );
+          const reasoningStart = performance.now();
+          const text = await this.processTranscription(joined, "openai", wasCancelled);
+          timings.reasoningProcessingDurationMs = Math.round(performance.now() - reasoningStart);
+          const source = (await this.isReasoningAvailable()) ? "openai-reasoned" : "openai";
+          return { success: true, text, rawText: joined, source, timings };
+        }
+      }
+
       // Managed enterprise STT outranks every personal setting.
       const managedResolution = getManagedTranscriptionResolution();
       if (managedResolution?.kind === "error") {
@@ -4384,6 +4481,9 @@ registerProcessor("pcm-streaming-processor", PCMStreamingProcessor);
           result.text,
           model === "orukeet-v0.1.0" ? null : sentDictionaryPrompt
         );
+
+        // A speculative piece wants its words only; cleanup runs once on the whole.
+        if (metadata.sttOnly) return { success: true, text: rawText, rawText, timings };
 
         const reasoningStart = performance.now();
         const text = await this.processTranscription(rawText, "openai", wasCancelled);

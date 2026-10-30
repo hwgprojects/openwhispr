@@ -140,6 +140,8 @@ async function detectServerType(base: string): Promise<void> {
   }
 }
 
+const OPENROUTER_CLEANUP_TIMEOUT_SECONDS = 8;
+
 export const openaiProvider: InferenceProvider = {
   id: "openai",
   supportsImages: true,
@@ -247,7 +249,13 @@ export const openaiProvider: InferenceProvider = {
 
       for (const { url: endpoint, type } of endpointCandidates) {
         const controller = new AbortController();
-        const timeoutSeconds = getLlmRequestTimeoutSeconds({ scope: config.inferenceScope });
+        // OpenRouter's throughput-sorted cleanup answers in under a second, so a
+        // stalled host is cut off early and the dictation pastes its raw text
+        // instead of waiting out the generic 30 s deadline.
+        const timeoutSeconds =
+          isOpenRouter && config.inferenceScope === "dictationCleanup"
+            ? OPENROUTER_CLEANUP_TIMEOUT_SECONDS
+            : getLlmRequestTimeoutSeconds({ scope: config.inferenceScope });
         const timeoutId = setTimeout(() => controller.abort(), timeoutSeconds * 1000);
         const unlinkCancel = abortOnCancel(config.requestId, controller);
         let readingBody = false;
