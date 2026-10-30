@@ -128,7 +128,7 @@ const offlineLocal = {
   showTranscriptionPreview: false,
 };
 
-test("only offline local engines get a tap", async (t) => {
+test("offline local engines and speculative gpt-transcribe get a tap", async (t) => {
   const { setSettings, createManager } = await loadWithSettings(t, offlineLocal);
   const manager = createManager({ getWorkletBlobUrl: () => "blob:worklet" });
   const taps = (settings) => {
@@ -150,7 +150,26 @@ test("only offline local engines get a tap", async (t) => {
     false,
     "online models commit their own stream"
   );
-  assert.equal(taps({ useLocalWhisper: false, cloudTranscriptionMode: "byok" }), false);
+  // BYOK gpt-transcribe is transcribed in pieces from the tap while the user
+  // speaks (speculativeTranscription.js); other cloud models get none.
+  assert.equal(
+    taps({
+      useLocalWhisper: false,
+      cloudTranscriptionMode: "byok",
+      cloudTranscriptionProvider: "openai",
+      cloudTranscriptionModel: "gpt-transcribe",
+    }),
+    true
+  );
+  assert.equal(
+    taps({
+      useLocalWhisper: false,
+      cloudTranscriptionMode: "byok",
+      cloudTranscriptionProvider: "openai",
+      cloudTranscriptionModel: "gpt-4o-mini-transcribe",
+    }),
+    false
+  );
   assert.equal(taps({ useLocalWhisper: false, cloudTranscriptionMode: "openwhispr" }), false);
 });
 
