@@ -8,9 +8,10 @@ Fork: https://github.com/hwgprojects/openwhispr, branch `hwg/provida-flow`.
 - **`AUDIO_KEY`**: the Windows user env var `AUDIO_KEY` is the OpenAI key. It wins over
   any stored key and over the machine's `OPENAI_API_KEY`, and the app never writes it to disk.
   Rotate it in Windows Environment Variables, then restart the app.
-- **Personal preset** (`presets/personal-preset.json`): every AI feature on OpenAI with your
-  own key (BYOK). Dictation uses `gpt-transcribe` with `gpt-6-luna` cleanup. The Tone & Style
-  settings for each app type are in the same file. The preload applies the preset after
+- **Personal preset** (`presets/personal-preset.json`): transcription and the assistant on
+  OpenAI with your own key (BYOK). Dictation uses `gpt-transcribe`; cleanup runs on
+  OpenRouter `openai/gpt-oss-120b` (high effort), which OpenRouter sends to its fastest host
+  (Cerebras or Groq). The Tone & Style settings for each app type are in the same file. The preload applies the preset after
   onboarding, and again only when `version` changes. A version bump overwrites the
   settings it lists.
 - **Dictionary seed** (`presets/provida-terms.txt`, one term per line, `#` comments).
@@ -19,6 +20,15 @@ Fork: https://github.com/hwgprojects/openwhispr, branch `hwg/provida-flow`.
   likely mishearings). It does not ship.
 - **Cleanup prompt**: the English default (`src/locales/en/prompts.json` `cleanupPrompt`)
   knows about Provida, British spelling, UK dates and £, and known mishearings.
+- **Speed** (2026-10-30): a short dictation pastes about 1.6-2 s after release, a 44 s one
+  about 2.6 s (was ~5.5 s). Three changes:
+  - Cleanup on OpenRouter sorted by throughput (`src/services/ai/chatRequestBody.ts`), with an
+    8 s deadline after which the raw transcript pastes. OpenAI's own models waited 1-6 s for
+    their first token.
+  - Connections to both hosts open on key-down (`src/helpers/connectionPrewarm.js`).
+  - Long `gpt-transcribe` dictations are cut at pauses and transcribed while you speak
+    (`src/helpers/speculativeTranscription.js`). Release only waits for the tail. Any failure
+    sends the whole recording as before.
 - **Updates**: the updater points at the fork, which has no releases. It never installs an
   upstream build over this one.
 
